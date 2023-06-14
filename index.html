@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd CareerCarve</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="resume-builder">
+        <h1>Select Your Sections</h1>
+        <div id="section-list">
+            <div class="section" draggable="true">
+                <div class="drag-handle">
+                    <i class="uil uil-bars"></i>
+                </div>
+                <button class="info-button" onclick="showInfo('Profile Summary')"><i
+                        class="uil uil-info-circle"></i></button>
+                <span class="section-name">Profile Summary</span>
+                <button class="edit-button"><i class="uil uil-edit-alt"></i></button>
+                <button class="toggle-button"><i class="uil uil-toggle-on"></i></button>
+            </div>
+            <div class="section" draggable="true">
+                <div class="drag-handle">
+                    <i class="uil uil-bars"></i>
+                </div>
+                <button class="info-button" onclick="showInfo('Academic and Cocurricular Achievements')"><i
+                        class="uil uil-info-circle"></i></button>
+                <span class="section-name">Academic and Cocurricular Achievements</span>
+                <button class="edit-button"><i class="uil uil-edit-alt"></i></button>
+                <button class="toggle-button"><i class="uil uil-toggle-on"></i></button>
+            </div>
+            <div class="section" draggable="true">
+                <div class="drag-handle">
+                    <i class="uil uil-bars"></i>
+                </div>
+                <button class="info-button" onclick="showInfo('Summer Internship Experience')"><i
+                        class="uil uil-info-circle"></i></button>
+                <span class="section-name">Summer Internship Experience</span>
+                <button class="edit-button"><i class="uil uil-edit-alt"></i></button>
+                <button class="toggle-button"><i class="uil uil-toggle-on"></i></button>
+            </div>
+            <div class="section" draggable="true">
+                <div class="drag-handle">
+                    <i class="uil uil-bars"></i>
+                </div>
+                <button class="info-button" onclick="showInfo('Work Experience')"><i
+                        class="uil uil-info-circle"></i></button>
+                <span class="section-name">Work Experience</span>
+                <button class="edit-button"><i class="uil uil-edit-alt"></i></button>
+                <button class="toggle-button"><i class="uil uil-toggle-on"></i></button>
+            </div>
+            <div class="section" draggable="true">
+                <div class="drag-handle">
+                    <i class="uil uil-bars"></i>
+                </div>
+                <button class="info-button" onclick="showInfo('Projects')"><i class="uil uil-info-circle"></i></button>
+                <span class="section-name">Projects</span>
+                <button class="edit-button"><i class="uil uil-edit-alt"></i></button>
+                <button class="toggle-button"><i class="uil uil-toggle-on"></i></button>
+            </div>
+            <div class="section" draggable="true">
+                <div class="drag-handle">
+                    <i class="uil uil-bars"></i>
+                </div>
+                <button class="info-button" onclick="showInfo('Certifications')"><i
+                        class="uil uil-info-circle"></i></button>
+                <span class="section-name">Certifications</span>
+                <button class="edit-button"><i class="uil uil-edit-alt"></i></button>
+                <button class="toggle-button"><i class="uil uil-toggle-on"></i></button>
+            </div>
+            <div class="section" draggable="true">
+                <div class="drag-handle">
+                    <i class="uil uil-bars"></i>
+                </div>
+                <button class="info-button" onclick="showInfo('LeaderShip Positions')"><i
+                        class="uil uil-info-circle"></i></button>
+                <span class="section-name">LeaderShip Positions</span>
+                <button class="edit-button"><i class="uil uil-edit-alt"></i></button>
+                <button class="toggle-button"><i class="uil uil-toggle-on"></i></button>
+            </div>
+            <div class="section" draggable="true">
+                <div class="drag-handle">
+                    <i class="uil uil-bars"></i>
+                </div>
+                <button class="info-button" onclick="showInfo('Extracurricular')"><i
+                        class="uil uil-info-circle"></i></button>
+                <span class="section-name">Extracurricular</span>
+                <button class="edit-button"><i class="uil uil-edit-alt"></i></button>
+                <button class="toggle-button"><i class="uil uil-toggle-on"></i></button>
+            </div>
+            <div class="section" draggable="true">
+                <div class="drag-handle">
+                    <i class="uil uil-bars"></i>
+                </div>
+                <button class="info-button" onclick="showInfo('Education')"><i
+                        class="uil uil-info-circle"></i></button>
+                <span class="section-name">Education</span>
+                <button class="edit-button"><i class="uil uil-edit-alt"></i></button>
+                <button class="toggle-button"><i class="uil uil-toggle-on"></i></button>
+            </div>
+        </div>
+        <button id="save-button" disabled>Save and Next</button>
+    </div>
+
+    <div id="info-modal">
+        <h2 id="section-title"></h2>
+        <p id="section-info"></p>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>

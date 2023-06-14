@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#resume-builder {
+    font-family: 'Poppins', Arial, sans-serif;
+    padding: 20px;
+    margin-top: 4%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h1 {
+    text-align: center;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+}
+
+.drag-handle {
+    cursor: move;
+    margin-right: 10px;
+}
+
+.section-name {
+    flex-grow: 1;
+}
+
+.edit-button,
+.toggle-button,
+.info-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.toggle-button{
+    color: #7F4A93;
+}
+#save-button {
+    display: block;
+    margin: 20px auto;
+    padding: 20px 100px;
+    font-weight: bold;
+    background-color: #7F4A93;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#save-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.section {
+    background-color: #f2f2f2;
+}
+
+.section-off {
+    opacity: 0.5;
+}
+
+#info-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    color: #fff;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+#info-modal h2,
+#info-modal p {
+    text-align: center;
+}
+
+#info-modal p {
+    margin-top: 25%;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .section {
+        flex-direction: row;
+    }
+
+    .section-name {
+        font-size: 80%;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 200%;
+        margin-bottom: 6%;
+    }
+}
